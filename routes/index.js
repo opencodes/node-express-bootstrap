@@ -2,7 +2,7 @@
 var util = require('util');
 module.exports = function (app) {
   app.get('/', function(req, res){
-    res.render('index.ejs',{ title: 'Test Page'});
+    res.render('home.ejs',{ layout:'index',title: 'Test Page'});
   });
   require('./module')(app);
 };
